@@ -1,0 +1,12 @@
+.container{
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.text{   
+    color: transparent;
+    background-image: linear-gradient(to right, #A86EB7,#D36678);
+    background-clip: text;
+
+}

@@ -2,12 +2,13 @@ import React from "react";
 import Navbar from "./Navbar";
 
 import styles from "./styles.module.css";
-import TypewriterComponent from "typewriter-effect";
+
 import SubHeading from "./SubHeading";
+import BorderMagicButton from "@/components/ui/BorderMagicButton";
 
 function LandingPage() {
 	return (
-		<div className="text-white">
+		<div className="text-white relative z-10">
 			<Navbar />
 
 			<div className={styles.container}>
@@ -16,6 +17,8 @@ function LandingPage() {
 				</h1>
 
 				<SubHeading />
+
+				<BorderMagicButton>Lets Begin</BorderMagicButton>
 			</div>
 		</div>
 	);

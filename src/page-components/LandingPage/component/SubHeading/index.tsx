@@ -1,7 +1,8 @@
 "use client";
 
-import React, { forwardRef } from "react";
+import React from "react";
 import TypewriterComponent from "typewriter-effect";
+import styles from "./styles.module.css";
 
 const DEFAULT_TEXT = [
 	"Text, Image, and Code Assistance",
@@ -10,26 +11,21 @@ const DEFAULT_TEXT = [
 	"Harmonizing Your Workflows with AI Brilliance",
 ];
 
-// function TextComp(props: any, ref) {}
-
-// const TextComp = (props: any, ref) => {
-// 	console.log(props, "props");
-
-// 	return <h2 ref={ref}>{props.text}</h2>;
-// };
-
-// TextComp.displayName = "TextComp";
-
 function SubHeading() {
 	return (
-		<TypewriterComponent
-			// component={TextComp}
-			options={{
-				strings: DEFAULT_TEXT,
-				autoStart: true,
-				loop: true,
-			}}
-		/>
+		<div className={styles.container}>
+			<TypewriterComponent
+				options={{
+					strings: DEFAULT_TEXT,
+					autoStart: true,
+					loop: true,
+					delay: 45,
+					deleteSpeed: 30,
+					pauseFor: 3000,
+					wrapperClassName: styles.text,
+				}}
+			/>
+		</div>
 	);
 }
 
