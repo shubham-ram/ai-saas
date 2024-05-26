@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 18px;
+    color: #fff;
+    background-image: linear-gradient(140deg, var( --linear-gradient-bg-color));
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.top_nav{
+    flex: 1;
+}
+
+.nav_items {
+    display: block;
+    padding: 8px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:hover {
+        color: #000;
+        background:#B3A1C7;
+    }
+}
+
+.active_nav{
+    color: #000;
+    background:#B3A1C7;
+}
