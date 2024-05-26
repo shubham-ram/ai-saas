@@ -23,7 +23,7 @@ function Navbar() {
 
 			<div className={styles.top_nav}>
 				{NAVIGATION_TOP_MAPPING.map((navigation) => {
-					const { key, title, href } = navigation || {};
+					const { key, title, href, icon } = navigation || {};
 
 					return (
 						<Link
@@ -33,6 +33,7 @@ function Navbar() {
 								pathName === href ? styles.active_nav : ""
 							}`}
 						>
+							{icon}
 							{startCase(toLower(title))}
 						</Link>
 					);
@@ -41,7 +42,7 @@ function Navbar() {
 
 			<div className={styles.bottom_nav}>
 				{NAVIGATION_BOTTOM_MAPPING.map((bottomNav) => {
-					const { key, title, href } = bottomNav || {};
+					const { key, title, href, icon } = bottomNav || {};
 
 					return (
 						<Link
@@ -51,6 +52,7 @@ function Navbar() {
 								pathName === href ? styles.active_nav : ""
 							}`}
 						>
+							{icon}
 							{startCase(toLower(title))}
 						</Link>
 					);
