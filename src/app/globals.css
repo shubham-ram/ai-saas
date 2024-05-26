@@ -6,6 +6,21 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --linear-gradient-bg-color: 
+    hsl(0deg 0% 5%) 0%,
+    hsl(264deg 17% 8%) 24%,
+    hsl(264deg 21% 11%) 53%,
+    hsl(264deg 22% 13%) 71%,
+    hsl(264deg 23% 14%) 81%,
+    hsl(264deg 23% 16%) 87%,
+    hsl(265deg 24% 17%) 92%,
+    hsl(265deg 24% 19%) 95%,
+    hsl(265deg 24% 21%) 97%,
+    hsl(265deg 24% 22%) 98%,
+    hsl(265deg 24% 23%) 99%,
+    hsl(265deg 24% 25%) 100%,
+    hsl(265deg 24% 26%) 100%,
+    hsl(265deg 24% 27%) 100%
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +33,9 @@
 
 body {
     height: 100vh;
-    color: rgb(var(--foreground-rgb));
+    font-size: 20px;
+
+    /* color: rgb(var(--foreground-rgb)); */
 }
 
 @layer utilities {
