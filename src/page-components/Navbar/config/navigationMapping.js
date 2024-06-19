@@ -1,29 +1,29 @@
-import { IconMessages, IconPhoto, IconVideo, IconCode, IconSettings } from '@tabler/icons-react';
+import { TbVideo, TbMessages, TbSettings, TbPhoto, TbCode } from "react-icons/tb";
 
 const NAVIGATION_TOP_MAPPING = [
     {
         key: "chat",
         title: "chat",
         href: "/chat",
-        icon: <IconMessages />
+        icon: <TbMessages />
     },
     {
         key: "image",
         title: "Image Generation",
         href: "/image",
-        icon: <IconPhoto />
+        icon: <TbPhoto />
     },
     {
         key: "video",
         title: "Video Generation",
         href: "/video",
-        icon: <IconVideo />
+        icon: <TbVideo />
     },
     {
         key: "Code",
         title: "Code Generation",
         href: "/code",
-        icon: <IconCode />
+        icon: <TbCode />
     },
 
 ];
@@ -33,7 +33,7 @@ const NAVIGATION_BOTTOM_MAPPING = [
         key: "settings",
         title: "Settings",
         href: "/settings",
-        icon: <IconSettings />
+        icon: <TbSettings />
     }
 ]
 
