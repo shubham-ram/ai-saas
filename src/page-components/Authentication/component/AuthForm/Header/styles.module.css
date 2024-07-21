@@ -1,0 +1,13 @@
+.container{
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 28px;
+    text-align: center
+}
+
+.subheading {
+    font-size: 12px;
+}
