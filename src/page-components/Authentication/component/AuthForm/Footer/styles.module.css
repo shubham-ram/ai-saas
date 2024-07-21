@@ -1,0 +1,37 @@
+.container{
+    margin: 16px 0;
+}
+
+.or_section{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.or_section > span{
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, rgb(126 167 242 / 50%) 40%, rgb(181 205 247 / 0%) 97.3%);
+}
+
+.or_section > span:first-child{
+    transform: rotate(180deg);
+}
+
+.footer_txt{
+    margin: 8px ;
+    font-size: 12px;
+    color: #e8e8e8;
+    text-align: center;
+}
+
+.toggle_text{
+    margin: 0 4px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+
+    &:hover{
+        font-weight: 500;
+    }
+}
