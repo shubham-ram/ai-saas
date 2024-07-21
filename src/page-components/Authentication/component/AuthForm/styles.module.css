@@ -1,0 +1,19 @@
+.container{
+    width: 420px;
+    height: auto;
+    padding: 28px 60px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+
+.submit_btn{
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 48px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #3498DB;
+    border-radius: 8px;
+}
