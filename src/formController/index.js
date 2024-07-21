@@ -1,9 +1,11 @@
+import CheckboxController from './CheckboxController';
 import InputController from './InputController'
 import PasswordController from './PasswordController'
 
 const MAPPING = {
     text: InputController,
-    password: PasswordController
+    password: PasswordController,
+    checkbox: CheckboxController
 }
 
 const getField = (type = 'text') => {
