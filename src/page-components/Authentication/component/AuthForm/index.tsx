@@ -8,11 +8,13 @@ import Footer from "./Footer";
 
 import Header from "./Header";
 import FormItem from "./FormItem";
+import useAuthentication from "../../hook/useAuthentication";
+
 import styles from "./styles.module.css";
 
 function AuthForm({ isSignUp = false }) {
-	const formHook = useForm();
 	const formControls = getAuthControls({ isSignUp });
+	const { formHook, onSubmit } = useAuthentication();
 
 	const { handleSubmit } = formHook;
 
@@ -26,7 +28,10 @@ function AuthForm({ isSignUp = false }) {
 				isSignUp={isSignUp}
 			/>
 
-			<button className={styles.submit_btn}>
+			<button
+				className={styles.submit_btn}
+				onClick={handleSubmit(onSubmit)}
+			>
 				{isSignUp ? "Signup Now" : "Log In"}
 			</button>
 
