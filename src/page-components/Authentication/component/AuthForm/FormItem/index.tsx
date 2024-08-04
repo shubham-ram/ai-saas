@@ -1,5 +1,7 @@
 import React from "react";
+
 import styles from "./styles.module.css";
+
 import getField from "@/formController";
 import getWidth from "@/utils/getWidth";
 
@@ -47,7 +49,7 @@ function FormItem({ controls, formHook, isSignUp }) {
 								? `${
 										errors?.[name]?.message ||
 										errors?.[name]?.type
-								  }`
+									}`
 								: ""}
 						</p>
 					</div>

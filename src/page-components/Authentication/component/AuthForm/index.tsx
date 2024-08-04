@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { useForm } from "react-hook-form";
 
 import getAuthControls from "../../config/authFormControls";
 import useAuthentication from "../../hook/useAuthentication";

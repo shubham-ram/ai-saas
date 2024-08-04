@@ -1,4 +1,5 @@
 import React from "react";
+
 import Authentication from "@/page-components/Authentication/component";
 
 function Signup() {

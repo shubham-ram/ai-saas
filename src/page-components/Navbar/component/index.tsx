@@ -1,7 +1,9 @@
 "use client";
 
-import React from "react";
 import { startCase, toLower } from "lodash";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 import {
 	NAVIGATION_TOP_MAPPING,
@@ -9,8 +11,6 @@ import {
 } from "../config/navigationMapping";
 
 import styles from "./styles.module.css";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 
 function Navbar() {
 	const pathName = usePathname();

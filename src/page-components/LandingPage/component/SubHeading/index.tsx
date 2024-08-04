@@ -2,6 +2,7 @@
 
 import React from "react";
 import TypewriterComponent from "typewriter-effect";
+
 import styles from "./styles.module.css";
 
 const DEFAULT_TEXT = [

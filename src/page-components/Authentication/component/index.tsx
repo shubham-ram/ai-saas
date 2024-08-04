@@ -1,18 +1,19 @@
 import React from "react";
 
-import { AuroraBackground } from "@/components/ui/AuroraBackground";
 import AuthForm from "./AuthForm";
 
+import { AuroraBackground } from "@/components/ui/AuroraBackground";
+
 interface AuthInterface {
-  isSignUp?: boolean;
+	isSignUp?: boolean;
 }
 
 function Authentication({ isSignUp = false }: AuthInterface) {
-  return (
-    <AuroraBackground>
-      <AuthForm isSignUp={isSignUp} />
-    </AuroraBackground>
-  );
+	return (
+		<AuroraBackground>
+			<AuthForm isSignUp={isSignUp} />
+		</AuroraBackground>
+	);
 }
 
 export default Authentication;

@@ -1,6 +1,7 @@
 import React from "react";
-import PasswordInput from "@/components/form/PasswordInput";
 import { Controller } from "react-hook-form";
+
+import PasswordInput from "@/components/form/PasswordInput";
 
 function InputController(props: any) {
 	const { name, rules, control, value, ...rest } = props;

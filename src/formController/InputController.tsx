@@ -1,6 +1,7 @@
-import { Input } from "@/components/ui/Input";
 import React from "react";
 import { Controller } from "react-hook-form";
+
+import { Input } from "@/components/ui/Input";
 
 function InputController(props: any) {
 	const { name, rules, control, value, ...rest } = props;

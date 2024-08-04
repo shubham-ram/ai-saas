@@ -1,9 +1,9 @@
 import React from "react";
+
 import Navbar from "./Navbar";
-
 import styles from "./styles.module.css";
-
 import SubHeading from "./SubHeading";
+
 import BorderMagicButton from "@/components/ui/BorderMagicButton";
 
 function LandingPage() {

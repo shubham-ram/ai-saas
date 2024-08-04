@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, forwardRef } from "react";
-import { cn } from "@/utils/cn";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
+import { useState, forwardRef } from "react";
 import { PiEyeClosedBold, PiEye } from "react-icons/pi";
+
+import { cn } from "@/utils/cn";
 
 const radius = 100; // change this to increase the rdaius of the hover effect
 
@@ -49,7 +50,7 @@ function PasswordInput(props: any, ref) {
                     dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
                     group-hover/input:shadow-none transition duration-400 items-center justify-between gap-2
                 `,
-					className
+					className,
 				)}
 			>
 				<input

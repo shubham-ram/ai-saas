@@ -1,6 +1,7 @@
-import React from "react";
-import styles from "./styles.module.css";
 import { useRouter } from "next/navigation";
+import React from "react";
+
+import styles from "./styles.module.css";
 
 function Footer({ isSignUp }) {
 	const { push } = useRouter();

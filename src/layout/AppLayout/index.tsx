@@ -1,5 +1,6 @@
-import Navbar from "@/page-components/Navbar/component";
 import React from "react";
+
+import Navbar from "@/page-components/Navbar/component";
 
 function AppLayout(props: any) {
 	return (
