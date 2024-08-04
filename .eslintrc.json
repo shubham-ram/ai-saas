@@ -1,3 +1,29 @@
 {
-	"extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"plugins": ["import", "unused-imports"],
+	"rules": {
+		"import/no-extraneous-dependencies": "off",
+		"import/prefer-default-export": "off",
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "parent", "sibling", "index"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"no-unused-vars": "off",
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		]
+	}
 }
