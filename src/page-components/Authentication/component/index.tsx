@@ -8,6 +8,7 @@ interface AuthInterface {
 }
 
 function Authentication({ isSignUp = false }: AuthInterface) {
+	console.log("checking husky");
 	return (
 		<AuroraBackground>
 			<AuthForm isSignUp={isSignUp} />
