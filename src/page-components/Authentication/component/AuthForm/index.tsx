@@ -1,15 +1,14 @@
 "use client";
 
 import React from "react";
-import getAuthControls from "../../config/authFormControls";
 import { useForm } from "react-hook-form";
 
-import Footer from "./Footer";
-
-import Header from "./Header";
-import FormItem from "./FormItem";
+import getAuthControls from "../../config/authFormControls";
 import useAuthentication from "../../hook/useAuthentication";
 
+import Footer from "./Footer";
+import FormItem from "./FormItem";
+import Header from "./Header";
 import styles from "./styles.module.css";
 
 function AuthForm({ isSignUp = false }) {
