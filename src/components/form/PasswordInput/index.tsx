@@ -3,15 +3,20 @@
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 import { useState, forwardRef } from "react";
 import { PiEyeClosedBold, PiEye } from "react-icons/pi";
+import useSound from "use-sound";
 
+import click from "@/sound/click.mp3";
 import { cn } from "@/utils/cn";
 
 const radius = 100; // change this to increase the rdaius of the hover effect
 
 function PasswordInput(props: any, ref) {
-	const { className, type, ...rest } = props;
+	const { className, value, ...rest } = props;
+
 	const [visible, setVisible] = useState(false);
 	const [showPassword, setShowPassword] = useState(false);
+
+	const [play] = useSound(click);
 
 	let mouseX = useMotionValue(0);
 	let mouseY = useMotionValue(0);
@@ -58,12 +63,14 @@ function PasswordInput(props: any, ref) {
 					{...rest}
 					className="flex-1 outline-none bg-transparent"
 					type={showPassword ? "text" : "password"}
+					value={value || ""}
 				/>
 				<span
 					className="cursor-pointer"
 					role="presentation"
 					onClick={() => {
 						setShowPassword((prev) => !prev);
+						play();
 					}}
 				>
 					{showPassword ? <PiEye /> : <PiEyeClosedBold />}
