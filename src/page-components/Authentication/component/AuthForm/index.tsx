@@ -12,7 +12,7 @@ import styles from "./styles.module.css";
 
 function AuthForm({ isSignUp = false }) {
 	const formControls = getAuthControls({ isSignUp });
-	const { formHook, onSubmit } = useAuthentication();
+	const { formHook, onSubmit, onError } = useAuthentication();
 
 	const { handleSubmit } = formHook;
 
@@ -28,7 +28,7 @@ function AuthForm({ isSignUp = false }) {
 
 			<button
 				className={styles.submit_btn}
-				onClick={handleSubmit(onSubmit)}
+				onClick={handleSubmit(onSubmit, onError)}
 			>
 				{isSignUp ? "Signup Now" : "Log In"}
 			</button>
