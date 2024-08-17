@@ -19,7 +19,8 @@
 		"react-hook-form": "^7.51.5",
 		"react-icons": "^5.2.1",
 		"tailwind-merge": "^2.2.2",
-		"typewriter-effect": "^2.21.0"
+		"typewriter-effect": "^2.21.0",
+		"use-sound": "^4.0.3"
 	},
 	"devDependencies": {
 		"@types/lodash": "^4.17.4",
@@ -30,6 +31,7 @@
 		"eslint-config-next": "14.2.1",
 		"eslint-plugin-import": "^2.29.1",
 		"eslint-plugin-unused-imports": "^4.0.1",
+		"file-loader": "^6.2.0",
 		"husky": "^9.1.4",
 		"lint-staged": "^15.2.8",
 		"postcss": "^8",
